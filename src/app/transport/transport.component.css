@@ -1,0 +1,38 @@
+p {
+    font-family: Lato;
+  }
+  .mainDev
+  {
+    position:relative
+  }
+  .contentDev
+  {
+    position:absolute;top:.5rem
+  }
+  
+  .tranportWrapper{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+    min-height: 68px;
+  }
+  .tranportWrapper::after{
+    content:' '
+  }
+  .tranport
+  {
+    width:80px;
+    text-align: center;
+  }
+  
+  .dots .tranportWrapper{
+    margin-left:30px;
+  }
+  .dots .tranport {
+    width: 1em;
+    height: 1em;
+    border-radius: .5em;
+    background-color: red;
+  }
+
+  

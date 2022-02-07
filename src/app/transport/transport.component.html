@@ -1,0 +1,18 @@
+<div class="mainDev" >
+<div class="contentDev" >
+<svg stroke="red" stroke-width="2" fill="transparent" [attr.width]="tranportWrapper.offsetWidth" [attr.heigth]="tranportWrapper.offsetHeight" >
+  <path *ngFor="let data of pathsArray;let i=index" [attr.d]="data" />
+</svg>
+</div>
+<div #tranportWrapper class="tranportWrapper">
+    <ng-container *ngFor="let value of transportArray; let i = index">
+      <div
+        #airport
+        class="tranport"
+        [style.margin-top.px]="value.level * 50"
+      >
+        <span *ngIf="!dots">{{ value.text }}</span>
+      </div>
+    </ng-container>
+  </div>
+</div>
